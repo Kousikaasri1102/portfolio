@@ -1,0 +1,1046 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,500;1,300&family=Ubuntu:ital,wght@1,300;1,400;1,500&display=swap');
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+html{
+  scroll-behavior: smooth;
+}
+section{
+  padding: 100px 0;
+}
+.max-width{
+  max-width: 1300px;
+  padding: 0 80px;
+  margin: auto;
+}
+.about .about-content,
+.services .serv-content,
+.skills .skills-content,
+.contact .contact-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* custom scroll bar */
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-track {
+  background: rgb(173, 6, 90);
+}
+::-webkit-scrollbar-thumb {
+  background: rgb(41, 45, 35);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(41,45,35);
+}
+/*navbar styling*/
+.navbar{
+  position: fixed;
+  width:100% ;
+  z-index: 999;
+  padding: 15px 0;
+  background: pink;
+  font-family: 'ubuntu',sans-serif;
+  transition: all 0.3s ease;
+}
+.navbar.sticky{
+  padding: 15px 0;
+  background: rgb(41,45,35) ;
+}
+.navbar .max-width{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+.navbar .logo a{
+  color:  rgb(173, 6, 90);
+  font-size:  45px;
+  font-weight: 600;
+}
+.navbar .logo a span{
+  color: pink;
+  transition: all 0.3s ease;
+}
+.navbar.sticky .logo a span{
+  color: #fff;
+}
+.navbar .menu li{
+  list-style: none;
+  display: inline-block;
+}
+.navbar .menu li a{
+  display: block;
+  color: rgb(41, 45, 35);
+  font-size: 18px;
+  font-weight: 500;
+  margin-left: 25px;
+  transition: color 0.3s ease;
+}
+.navbar .menu li a:hover{
+  color: pink;
+}
+.navbar.sticky .menu li a:hover{
+  color: rgb(41, 45, 35);
+}
+.navbar .menu li {
+  list-style: none;
+  display: inline-block;
+}
+.navbar .menu li a{
+  color:  rgb(173, 6, 90);
+  font-size: 18px;
+  font-weight: 500;
+  margin-left: 30px;
+  transition: color 0.3s ease;
+}
+.navbar .menu li a:hover{
+  color: pink;
+}
+/*menu btn*/
+.menu-btn{
+  color:  rgb(173, 6, 90);
+  font-size: 23px;
+  cursor: pointer;
+  display: none;
+
+}
+.scroll-up-btn{
+  position: fixed;
+  height: 30px;
+  width: 30px;
+  background: rgb(173, 6, 90);
+  right: 30px;
+  bottom: 10px;
+  text-align: center;
+  line-height: 45px;
+  color: #111;
+  z-index: 9999;
+  font-size: 20px;
+  border-radius: 10px;
+  border-bottom-width: 2px;
+  cursor: pointer;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+.scroll-up-btn.show{
+  bottom: 30px;
+  opacity: 1;
+  pointer-events: auto;
+}
+.scroll-up-btn:hover{
+  filter: brightness(90%);
+}
+
+/* homwe section*/
+.home{
+  display :flex;
+  background: pink;
+  padding: 100px 0;
+  height:max-content;
+  color:rgb(173, 6, 90);
+  min-height: 250px;
+  font-family: 'ubuntu', sans-serif;
+}
+.home .home-content{
+display: flex;
+margin: 3px ;
+flex-wrap: wrap;
+align-items: center;
+justify-content: space-between;
+height:0%;
+}
+
+
+
+.home .home-content .left{
+width: 45%;
+}
+.home .home-content .left img{
+  height: 400px;
+   width: 400px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+.home .home-content .right{
+    
+  text-align: justify;
+    flex-wrap: wrap;
+    
+    justify-content: space-between ;
+  }
+  
+  .home .home-content .right{
+    width: 55%;
+    
+  }
+  
+
+.home .home-content  .right  .text-1{
+  font-size: 27px;
+}
+
+.home .home-content  .right .text-2{
+  font-size: 50px;
+  font-weight: 500;
+  margin: -3px ;
+}
+.home .home-content  .right .text-3{
+  font-size: 30px;
+  font-weight: 500;
+  margin: -3px ;
+}
+.home .home-content  .right .text-4{
+  font-size: 25px;
+  margin: 5px 0;
+}
+.home .home-content .right .icon{
+  size: 5em;
+ 
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.home .home-content .rows i{
+  font-size: 25px;
+  color: rgb(173,6,90);
+}
+
+
+/*about section*/
+.about{
+  padding: 100px 0;
+  font-family:  'poppins', sans-serif;
+  background: rgb(41, 45, 35);
+  color:  #fff;
+ 
+}
+.about .title{
+  position: relative;
+  text-align: center;
+  font-size:  35px;
+  color:  rgb(173, 6, 90);
+  font-weight: 500;
+  margin-bottom: 60px;
+  padding-bottom: 20px;
+  font-family:  'poppins', sans-serif;
+}
+.about .title::before{
+  content: "";
+  position: absolute;
+  width: 180px;
+  height: -5px;
+  bottom: 0px;
+  left: 10%;
+  transform: translateX(-40%);
+  background:  rgb(173, 6, 90);
+  
+}
+.about .about-content{
+  font-size: 30px;
+  font-weight: 400;
+  margin: 3px ;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly ;
+}
+.about .about-content .left{
+  width: 45%;
+ 
+
+}
+
+.about .title2{
+  position: relative;
+  text-align: center;
+  font-size:  35px;
+  color:  rgb(173, 6, 90);
+  font-weight: 500;
+  margin-top: 60px;
+  padding-top: 20px;
+  margin-bottom: 60px;
+  padding-bottom: 20px;
+  font-family:  'poppins', sans-serif;
+}
+.about .about-content1{
+  font-size: 30px;
+  font-weight: 500;
+  margin: -3px ;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly ;
+}
+.about .about-content .right1{
+  width: 45%;
+ 
+
+}
+.about .title3{
+  position: relative;
+  text-align: center;
+  font-size:  35px;
+  color:  rgb(173, 6, 90);
+  font-weight: 500;
+  margin-top: 60px;
+  padding-top: 20px;
+  margin-bottom: 60px;
+  padding-bottom: 20px;
+  font-family:  'poppins', sans-serif;
+}
+.about .about-content2{
+  font-size: 30px;
+  font-weight: 500;
+  margin: -3px ;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly ;
+}
+.about .about-content .right2{
+  width: 45%;
+ 
+
+}
+/*skill*/
+
+.skills{
+  padding: 100px 0;
+  font-family:  'poppins', sans-serif;
+  background: pink;
+ color: rgb(41, 45, 35);
+ font-size: 25px;
+ font-weight: 500;
+ align-items: center;
+ justify-items: center;
+ 
+}
+.skills .title{
+  position: relative;
+  text-align: center;
+  font-size:  35px;
+  color:  rgb(173, 6, 90);
+  font-weight: 500;
+  margin-bottom: 60px;
+  padding-bottom: 20px;
+  font-family:  'poppins', sans-serif;
+}
+
+    .containers {
+      width: 100%;
+      font-size: 10px;
+      background-color: rgb(41,45,35);
+      align-items: center;
+      
+    }
+    
+    .skill {
+      text-align: right;
+      padding-top: 3px;
+      padding-bottom: 3px;
+      color: pink;
+      justify-content: center;
+    }
+    
+    .html {width: 80%; background-color: rgb(173,6,90);}
+    .css {width: 70%; background-color: rgb(173,6,90);}
+    .js {width: 50%; background-color: rgb(173,6,90);}
+    .python {width: 60%; background-color: rgb(173,6,90);}
+    .c {width: 75%; background-color: rgb(173,6,90);}
+    .b {width: 50%; background-color: rgb(173,6,90);}
+/*education section*/
+.qua{
+  padding: 100px 0;
+  font-family:  'poppins', sans-serif;
+  background: rgb(41, 45, 35);
+  color:  #fff;
+ 
+}
+.qua .title{
+  position: relative;
+  text-align: center;
+  font-size:  35px;
+  color:  rgb(173, 6, 90);
+  font-weight: 500;
+  margin-bottom: 60px;
+  padding-bottom: 20px;
+  font-family:  'poppins', sans-serif;
+}
+.timeline {
+  background-color: rgb(41,45,35);
+    font-family: poppins, sans-serif;
+  
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* The actual timeline (the vertical ruler) */
+  .timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: pink;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+  }
+  
+  /* Container around content */
+  .container {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+  }
+  
+  /* The circles on the timeline */
+  .container::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    right: -17px;
+    background-color: pink;
+    border: 5px solid rgb(173,6,90);
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+  }
+  
+  /* Place the container to the left */
+  .left {
+    left: 0;
+  }
+  
+  /* Place the container to the right */
+  .right {
+    left: 50%;
+  }
+  
+  /* Add arrows to the left container (pointing right) */
+  .left::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    right: 30px;
+    border: medium solid white;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent white;
+  }
+  
+  /* Add arrows to the right container (pointing left) */
+  .right::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    left: 30px;
+    border: medium solid pink;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
+  
+  /* Fix the circle for containers on the right side */
+  .right::after {
+    left: -16px;
+  }
+  
+  /* The actual content */
+  .content {
+    padding: 20px 30px;
+    background-color: white;
+    color: rgb(173,6,90);
+    position: relative;
+    border-radius: 6px;
+  }
+  
+
+
+
+
+/*project section*/
+.project{
+  padding: 100px 0;
+  font-family:  'poppins', sans-serif;
+  background:pink;
+  color:  rgb(173, 6, 90);
+ 
+}
+.project .project-content{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  }
+.project .title{
+  position: relative;
+  text-align: center;
+  font-size:  35px;
+  color:  rgb(173, 6, 90);
+  font-weight: 500;
+  margin-bottom: 60px;
+  padding-bottom: 20px;
+  font-family:  'poppins', sans-serif;
+}
+.project .carousel .card{
+  background: pink;
+  border-radius: 1px;
+  padding: 25px 35px;
+  text-align: center;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+.project .carousel .card:hover{
+  background: rgb(41, 45, 35);
+}
+.project .carousel .card .box{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+.project .carousel .card:hover .box{
+  transform: scale(1.05);
+}
+.project .carousel .card .text{
+  font-size: 30px;
+  font-weight: 600;
+  margin: 10px 0 7px 0;
+}
+.project .carousel .card img{
+  height: 300px;
+  width: 500px;
+  object-fit: cover;
+  border-radius: 1%;
+  border: 3 px solid rgb(41, 45, 35);
+  transition: all 0.3s ease;
+}
+.project .carousel .card:hover img{
+  border-color:  rgb(173, 6, 90);
+}
+.owl-dots{
+  text-align: center;
+  margin-top: 10px;
+}
+.owl-dot{
+  height: 13px;
+  width: 25px;
+  margin: 0 5px;
+  outline: none!important;
+  border-radius: 20%;
+  border: 2px solid rgb(41, 45, 35)!important;
+  transition: all 0.3s ease;
+}
+.owl-dot.active{
+  width: 35px;
+  border-radius: 14px;
+}
+.owl-dot.active,
+.owl-dot:hover{
+  background: rgb(41, 45, 35)!important;
+}
+
+
+  /*contact section*/
+.contact{
+  padding: 100px 0;
+  font-family:  'poppins', sans-serif;
+  background: rgb(41, 45, 35);
+  color:  #fff;
+  align-items: center;
+  justify-content: space-evenly ;
+ 
+}
+.contact .contact-content{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  }
+.contact .title{
+  position: relative;
+  text-align: center;
+  font-size:  35px;
+  color:  rgb(173, 6, 90);
+  font-weight: 500;
+  margin-bottom: 60px;
+  padding-bottom: 20px;
+  font-family:  'poppins', sans-serif;
+}
+
+.contact .contact-content .column{
+  width: calc(50% - 30px);
+}
+.contact .contact-content .text{
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.contact .contact-content .left p{
+  text-align: justify;
+}
+.contact .contact-content .left .icons{
+  margin: 10px 0;
+}
+.contact .contact-content .row{
+  display: flex;
+  height: 65px;
+  align-items: center;
+}
+.contact .contact-content .row .info{
+  margin-left: 30px;
+}
+.contact .contact-content .row i{
+  font-size: 25px;
+  color: #fff;
+}
+.contact .contact-content .info .head{
+  font-weight: 500;
+}
+.contact .contact-content .info .sub-title{
+  color:  rgb(173, 6, 90);
+}
+.contact .right form .fields{
+  display: flex;
+}
+.contact .right form .field,
+.contact .right form .fields .field{
+  height: 45px;
+  width: 100%;
+  margin-bottom: 15px;
+}
+.contact .right form .textarea{
+  height: 80px;
+  width: 100%;
+}
+.contact .right form .name{
+  margin-right: 10px;
+}
+.contact .right form .field input,
+.contact .right form .textarea textarea{
+  height: 100%;
+  width: 100%;
+  border: 1px solid lightgrey;
+  border-radius: 6px;
+  outline: none;
+  padding: 0 15px;
+  font-size: 17px;
+  font-family: 'Poppins', sans-serif;
+  transition: all 0.3s ease;
+}
+.contact .right form .field input:focus,
+.contact .right form .textarea textarea:focus{
+  border-color: #b3b3b3;
+}
+.contact .right form .textarea textarea{
+padding-top: 10px;
+resize: none;
+}
+.contact .right form .button-area{
+display: flex;
+align-items: center;
+}
+.right form .button-area button{
+color: #fff;
+display: block;
+width: 160px!important;
+height: 45px;
+outline: none;
+font-size: 18px;
+font-weight: 500;
+border-radius: 6px;
+cursor: pointer;
+flex-wrap: nowrap;
+background:  rgb(173, 6, 90);
+border: 2px solid  rgb(173, 6, 90);
+transition: all 0.3s ease;
+}
+.right form .button-area button:hover{
+color:  rgb(173, 6, 90);
+background: none;
+}
+
+
+ /* footer section styling */
+footer{
+  font-size: 25px;
+  font-weight: 400px;
+  background: pink;
+  padding: 15px 23px;
+  color:rgb(173, 6, 90) ;
+  text-align: center;
+}
+footer span a{
+  color: rgb(173, 6, 90);
+  text-decoration: none;
+}
+footer span a:hover{
+  text-decoration: underline;
+}
+/*responsive */
+@media (max-width: 1104px ){
+  .home .home-content .left img{
+    
+    height: 200px;
+    width: 200px;
+} 
+.home .home-content .text-1{
+  font-size: 25px;
+}
+.home .home-content .text-2{
+  font-size: 35px;
+} .home .home-content .text-3{
+font-size: 25px;
+}
+.home .home-content .text-4{
+font-size: 20px;
+}
+  .about .about-content .right img{
+      height: 250px;
+      width: 250px;
+  }
+  .skill .skill-content .containers{
+    font-size: 10px;
+    font-weight: 200px;
+  }.skills{
+    padding: 100px 0;
+    font-family:  'poppins', sans-serif;
+    background: pink;
+   color: rgb(41, 45, 35);
+   font-size: 15px;
+   font-weight: 500;
+   align-items: center;
+   justify-items: center;
+   
+  }
+
+}@media (max-width: 991px) {
+  .max-width{
+      padding: 0 50px;
+  }
+  .skill .skill-content .containers{
+    font-size: 20px;
+    font-weight: 250px;
+  }.skills{
+    padding: 100px 0;
+    font-family:  'poppins', sans-serif;
+    background: pink;
+   color: rgb(41, 45, 35);
+   font-size: 15px;
+   font-weight: 500;
+   align-items: center;
+   justify-items: center;
+   
+  }
+}@media (max-width: 947px){
+  .menu-btn{
+      display: block;
+      z-index: 999;
+  }
+  .menu-btn i.active:before{
+      content: "\f00d";
+  }
+  .navbar .menu{
+      position: fixed;
+      height: 100vh;
+      width: 100%;
+      left: -100%;
+      top: 0;
+      background: rgb(41, 45, 35);
+      text-align: center;
+      padding-top: 80px;
+      transition: all 0.3s ease;
+  }
+  .navbar .menu.active{
+      left: 0;
+  }
+  .navbar .menu li{
+      display: block;
+  }
+  .navbar .menu li a{
+      display: inline-block;
+      margin: 20px 0;
+      font-size: 25px;
+  }
+  .home .home-content .left{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto 60px;
+  }
+  .home .home-content .right{
+    flex: 120%;
+  
+  }
+   .home .home-content .text-1{
+    font-size: 25px;
+}
+.home .home-content .text-2{
+    font-size: 35px;
+} .home .home-content .text-3{
+  font-size: 25px;
+}
+.home .home-content .text-4{
+  font-size: 20px;
+}.contact .contact-content .column{
+  width: 100%;
+  margin-bottom: 35px;
+}  .about .about-content .column{
+  width: 100%;
+}
+.about .about-content .right{
+  display: flex;
+  justify-content: center;
+  margin: 0 auto 60px;
+}
+.about .about-content .left{
+  flex: 100%;
+}
+.max-width{
+  max-width: 930px;}
+  .skill .skill-content .containers,
+  .contact .contact-content .column{
+      width: 100%;
+      margin-bottom: 35px;
+  } .skill .skill-content .containers{
+    font-size: 25px;
+    font-weight: 250px;
+  }
+
+}@media (max-width: 690px) {
+  .max-width{
+      padding: 0 23px;
+  }
+  .home .home-content .left{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto 60px;
+  }
+  .home .home-content .right{
+    flex: 100%;
+  
+  }
+  .home .home-content .text-1{
+      font-size: 25px;
+  }
+  .home .home-content .text-2{
+      font-size: 30px;
+  }
+  .home .home-content .text-3{
+    font-size: 25px;
+}
+.home .home-content .text-4{
+    font-size: 20px;
+}.skills{
+  padding: 100px 0;
+  font-family:  'poppins', sans-serif;
+  background: pink;
+ color: rgb(41, 45, 35);
+ font-size: 15px;
+ font-weight: 500;
+ align-items: center;
+ justify-items: center;
+ 
+}
+  
+}
+@media (max-width: 500px) {
+  .home .home-content .left{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto 60px;
+    height: 20vh;
+  }
+  .home .home-content .right{
+    flex: 100%;
+
+  }
+  .home .home-content .text-1{
+      font-size: 20px;
+  }
+  .home .home-content .text-2{
+      font-size: 25px;
+  }
+  .home .home-content .text-3{
+    font-size: 20px;
+}
+.home .home-content .text-4{
+    font-size: 17px;
+}
+  
+
+  .skill .skill-content .containers{
+    font-size: 20px;
+    font-weight: 250px;
+  }
+} 
+  .contact .right form .fields{
+      flex-direction: column;
+  }
+  .contact .right form .name,
+  .contact .right form .email{
+      margin: 0;
+  }
+  .right form .error-box{
+     width: 150px;
+  }
+  .scroll-up-btn{
+      right: 15px;
+      bottom: 15px;
+      height: 38px;
+      width: 35px;
+      font-size: 23px;
+      line-height: 38px;
+  }
+  .skills{
+    padding: 100px 0;
+    font-family:  'poppins', sans-serif;
+    background: pink;
+   color: rgb(41, 45, 35);
+   font-size: 15px;
+   font-weight: 500;
+   align-items: center;
+   justify-items: center;
+   
+  }
+
+.timeline {
+  background-color: rgb(41,45,35);
+    font-family: poppins, sans-serif;
+  
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* The actual timeline (the vertical ruler) */
+  .timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: pink;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+  }
+  
+  /* Container around content */
+  .container {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+  }
+  
+  /* The circles on the timeline */
+  .container::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    right: -17px;
+    background-color: pink;
+    border: 5px solid rgb(173,6,90);
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+  }
+  
+  /* Place the container to the left */
+  .left {
+    left: 0;
+  }
+  
+  /* Place the container to the right */
+  .right {
+    left: 50%;
+  }
+  
+  /* Add arrows to the left container (pointing right) */
+  .left::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    right: 30px;
+    border: medium solid white;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent white;
+  }
+  
+  /* Add arrows to the right container (pointing left) */
+  .right::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    left: 30px;
+    border: medium solid pink;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
+  
+  /* Fix the circle for containers on the right side */
+  .right::after {
+    left: -16px;
+  }
+  
+  /* The actual content */
+  .content {
+    padding: 20px 30px;
+    background-color: white;
+    color: rgb(173,6,90);
+    position: relative;
+    border-radius: 6px;
+  }
+  @media screen and (max-width: 600px) {
+    /* Place the timelime to the left */
+    .qua .timeline::after {
+    left: 31px;
+    }
+    
+    /* Full-width containers */
+    .container {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+    }
+    
+    /* Make sure that all arrows are pointing leftwards */
+    .container::before {
+    left: 60px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+    }
+  
+    /* Make sure all circles are at the same spot */
+    .left::after, .right::after {
+    left: 15px;
+    }
+    
+    /* Make all right containers behave like the left ones */
+    .right {
+    left: 0%;
+    }
+  }
