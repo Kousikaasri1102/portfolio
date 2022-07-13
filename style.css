@@ -87,7 +87,7 @@ section{
   color: pink;
 }
 .navbar.sticky .menu li a:hover{
-  color: rgb(41, 45, 35);
+  color: pink;
 }
 .navbar .menu li {
   list-style: none;
@@ -143,7 +143,7 @@ section{
 .home{
   display :flex;
   background: pink;
-  padding: 100px 0;
+  padding: 130px 0;
   height:max-content;
   color:rgb(173, 6, 90);
   min-height: 250px;
@@ -319,6 +319,7 @@ width: 45%;
  color: rgb(41, 45, 35);
  font-size: 25px;
  font-weight: 500;
+ 
  align-items: center;
  justify-items: center;
  
@@ -328,7 +329,7 @@ width: 45%;
   text-align: center;
   font-size:  35px;
   color:  rgb(173, 6, 90);
-  font-weight: 500;
+  font-weight: 700;
   margin-bottom: 60px;
   padding-bottom: 20px;
   font-family:  'poppins', sans-serif;
@@ -336,7 +337,7 @@ width: 45%;
 
     .containers {
       width: 100%;
-      font-size: 10px;
+      font-size: 20px;
       background-color: rgb(41,45,35);
       align-items: center;
       
@@ -346,8 +347,12 @@ width: 45%;
       text-align: right;
       padding-top: 3px;
       padding-bottom: 3px;
+      font-size: 10px;
+      font-weight: 300px;
       color: pink;
       justify-content: center;
+    
+      
     }
     
     .html {width: 80%; background-color: rgb(173,6,90);}
@@ -500,7 +505,7 @@ width: 45%;
 .project .carousel .card{
   background: pink;
   border-radius: 1px;
-  padding: 25px 35px;
+  padding: 45px 35px;
   text-align: center;
   overflow: hidden;
   transition: all 0.3s ease;
@@ -520,14 +525,14 @@ width: 45%;
 }
 .project .carousel .card .text{
   font-size: 30px;
-  font-weight: 600;
+  font-weight: 500;
   margin: 10px 0 7px 0;
 }
 .project .carousel .card img{
   height: 300px;
   width: 500px;
   object-fit: cover;
-  border-radius: 1%;
+  border-radius: 3%;
   border: 3 px solid rgb(41, 45, 35);
   transition: all 0.3s ease;
 }
@@ -698,41 +703,119 @@ footer span a:hover{
   .home .home-content .left img{
     
     height: 200px;
-    width: 200px;
+    width: 250px;
+    object-fit: cover;
+    border-radius: 4px;
 } 
-.home .home-content .text-1{
-  font-size: 25px;
+
+.home .home-content  .right  .text-1{
+  font-size: 18px;
+  text-align: center;
 }
-.home .home-content .text-2{
-  font-size: 35px;
-} .home .home-content .text-3{
-font-size: 25px;
+
+.home .home-content  .right .text-2{
+  font-size: 40px;
+  font-weight: 400;
+  text-align: center;
+  margin: -3px ;
 }
-.home .home-content .text-4{
-font-size: 20px;
+.home .home-content  .right .text-3{
+  font-size: 30px;
+  font-weight: 400;
+  margin: -3px ;
+  text-align: center;
+}
+.home .home-content  .right .text-4{
+  font-size: 18px;
+  margin: 5px 0;
+  text-align: center;
+
+} 
+.home .home-content .right .icon{
+  size: 5em;
+ 
+  object-fit: cover;
+  border-radius: 6px;
+}
+.project .carousel .card .text{
+  font-size: 20px;
+  font-weight: 500;
+  margin: 10px 0 7px 0;
+}.about .about-content .left{
+  width: 45%;
+ 
+
+}
+.about .about-content{
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
   .about .about-content .right img{
-      height: 250px;
-      width: 250px;
+       
+      height: 0px;
+      width: 0px;
   }
   .skill .skill-content .containers{
     font-size: 10px;
     font-weight: 200px;
   }.skills{
-    padding: 100px 0;
-    font-family:  'poppins', sans-serif;
-    background: pink;
-   color: rgb(41, 45, 35);
+       
    font-size: 15px;
    font-weight: 500;
-   align-items: center;
-   justify-items: center;
-   
+  }.navbar .logo a{
+    color:  rgb(173, 6, 90);
+    font-size:  35px;
+    font-weight: 500;
   }
+  footer{
+    font-size: 18px;
+    font-weight: 200px;
+    background: pink;
+    padding: 15px 23px;
+    color:rgb(173, 6, 90) ;
+    text-align: center;
+  }
+  .about .about-content{
+    font-size: 20px;
+    font-weight: 300;
+    margin: 5px ;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between ;
+  }.skill {
+    text-align: right;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    color: pink;
+    font-size: 10px;
+    justify-content: center;
+  }
+  .home .home-content{
+    display: flex;
+    margin: 1px ;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    height:0%;
+    }.navbar.sticky{
+      padding: 15px 0;
+      background: rgb(41,45,35) ;
+    }
+    
 
 }@media (max-width: 991px) {
   .max-width{
       padding: 0 50px;
+  }.about .about-content{
+    font-size: 20px;
+    font-weight: 300;
+    margin: 3px ;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly ;
   }
   .skill .skill-content .containers{
     font-size: 20px;
@@ -748,6 +831,11 @@ font-size: 20px;
    justify-items: center;
    
   }
+  .project .carousel .card .text{
+    font-size: 22px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+  }
 }@media (max-width: 947px){
   .menu-btn{
       display: block;
@@ -756,6 +844,7 @@ font-size: 20px;
   .menu-btn i.active:before{
       content: "\f00d";
   }
+  
   .navbar .menu{
       position: fixed;
       height: 100vh;
@@ -788,12 +877,12 @@ font-size: 20px;
   
   }
    .home .home-content .text-1{
-    font-size: 25px;
+    font-size: 20px;
 }
 .home .home-content .text-2{
-    font-size: 35px;
+    font-size: 30px;
 } .home .home-content .text-3{
-  font-size: 25px;
+  font-size: 28px;
 }
 .home .home-content .text-4{
   font-size: 20px;
@@ -810,6 +899,14 @@ font-size: 20px;
 }
 .about .about-content .left{
   flex: 100%;
+}.about .about-content{
+  font-size: 20px;
+  font-weight: 300;
+  margin: 3px ;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly ;
 }
 .max-width{
   max-width: 930px;}
